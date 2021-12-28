@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    color: rgb(64, 64, 64);
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 0;
+    border-radius: 5px;
+}
+/* pw */
+.pwcontainer{
+    margin-top: 10px;
+    width: 85%;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(91, 91, 91);
+    position: relative;
+    overflow: hidden;
+}
+
+#pw{
+    font-weight: bold;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Roboto Mono', monospace;
+}
+
+#pw-overlay.typewriter{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    animation: typewriter 1s ease forwards;
+}
+
+@keyframes typewriter {
+    0%{left: 0%;}
+    100%{left: 100%;}
+}
+/* /pw */
+
+/* pw lenght */
+
+#chosenumber{
+    margin-top: 10px;
+    width: 85%;
+    text-align: center;
+    color: rgb(22, 43, 61);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+/* /pw lenght */
+
+/* features */
+.subcontainer{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.subcontainer div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.subcontainer div input{
+    margin: 5px;
+}
+
+
+.checkbox-box{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+/* /features */
+
+/* last buttons */
+
+.submitbox{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+.submitbox button{
+    width: 48%;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.submitbox button:active{
+    background-color: rgb(240, 240, 240);
+    box-shadow: none;
+}
+.submitbox button:hover{
+    background-color: rgb(245, 245, 245);
+    color: rgb(120, 121, 122);
+}
+
+/* /last buttons */
+
+/* global */
+
+.shadow{
+    box-shadow: 7px 7px 15px 3px rgba(71, 71, 71, 0.2);
+}
+.shadow2{
+    box-shadow: 6px 6px 15px 5px rgba(71, 71, 71, 0.2);
+}
+
+::selection{  /* colore del testo selezionato */
+    background-color: transparent;
+    color: rgb(143, 156, 169);
+}
